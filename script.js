@@ -69,16 +69,14 @@ function submitForm(e) {
   const rollNo = document.getElementById('rollNo').value.trim();
   const phone = document.getElementById('phone').value.trim();
   const pickup = document.getElementById('pickup').value;
-  const txnId = document.getElementById('txnId').value.trim();
   const notes = document.getElementById('notes').value.trim();
 
   // Format message
-  const message = `*New Booking Request - Sharan Trip* 🌲\n\n` +
+  const message = `*New Registration Request - Sharan Trip* 🌲\n\n` +
     `👤 *Name:* ${fullName}\n` +
     `🆔 *Roll No / ID:* ${rollNo}\n` +
     `📞 *Phone:* ${phone}\n` +
     `📍 *Pickup Location:* ${pickup}\n` +
-    `💸 *Transaction ID:* ${txnId}\n` +
     `📝 *Notes:* ${notes || 'None'}`;
 
   // WhatsApp API URL (Phone: +92 333 2800834 -> 923332800834)

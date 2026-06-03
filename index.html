@@ -375,46 +375,7 @@
     <div class="container">
       <div class="section-label">Secure Your Spot</div>
       <h2 class="section-title">Ready to Join <span class="gradient-text">the Adventure?</span></h2>
-      <p class="register-intro">Fill in your details below and complete payment to confirm your booking.</p>
-
-      <!-- Payment Card -->
-      <div class="payment-card">
-        <div class="payment-card-inner">
-          <div class="payment-header">
-            <div class="payment-brand">
-              <span class="payment-brand-urdu">راہ</span>
-              <span>Payment Details</span>
-            </div>
-            <div class="payment-price">
-              <span class="price-label">Trip Cost</span>
-              <span class="price-amount">PKR 26,000</span>
-            </div>
-          </div>
-          <div class="payment-divider"></div>
-          <div class="payment-details">
-            <div class="payment-row">
-              <span class="p-label">Bank</span>
-              <span class="p-value highlight">UBL (United Bank Limited)</span>
-            </div>
-            <div class="payment-row">
-              <span class="p-label">Account Title</span>
-              <span class="p-value">Yubail Adeel</span>
-            </div>
-            <div class="payment-row">
-              <span class="p-label">Account Number</span>
-              <span class="p-value mono copyable" id="accNum" data-copy="1739326813588" onclick="copyText('accNum','1739326813588')">1739326813588 <span class="copy-icon">📋</span></span>
-            </div>
-            <div class="payment-row">
-              <span class="p-label">IBAN</span>
-              <span class="p-value mono copyable" id="ibanNum" data-copy="PK91UNIL0109000326813588" onclick="copyText('ibanNum','PK91UNIL0109000326813588')">PK91UNIL0109000326813588 <span class="copy-icon">📋</span></span>
-            </div>
-          </div>
-          <div class="payment-note">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-            Send the payment screenshot with your registration form below
-          </div>
-        </div>
-      </div>
+      <p class="register-intro">Fill in your details below to register interest and secure your spot.</p>
 
       <!-- Registration Form -->
       <form class="reg-form" id="regForm" onsubmit="submitForm(event)">
@@ -440,22 +401,18 @@
             </select>
           </div>
           <div class="form-group full-width">
-            <label for="txnId">Transaction ID / Screenshot Reference <span class="req">*</span></label>
-            <input type="text" id="txnId" name="txnId" placeholder="Enter your transaction ID after payment" required />
-          </div>
-          <div class="form-group full-width">
             <label for="notes">Anything we should know? (allergies, queries)</label>
             <textarea id="notes" name="notes" placeholder="Optional notes..." rows="3"></textarea>
           </div>
         </div>
         <button type="submit" class="form-submit" id="submitBtn">
-          <span class="submit-text">Confirm My Booking 🏔️</span>
+          <span class="submit-text">Register My Interest 🏔️</span>
         </button>
         <div id="formSuccess" class="form-success hidden">
           <span>🎉</span>
           <div>
             <strong>Almost Done!</strong>
-            <p>We are opening WhatsApp to submit your booking details. If it didn't open, click below to send them:</p>
+            <p>We are opening WhatsApp to submit your registration details. If it didn't open, click below to send them:</p>
             <a id="waFallbackLink" href="#" target="_blank" class="wa-fallback-btn">Send Details via WhatsApp 💬</a>
           </div>
         </div>
